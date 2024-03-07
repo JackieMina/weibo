@@ -11974,7 +11974,7 @@ nav.navbar.navbar-expand-lg {
   margin-bottom: 20px;
 }
 
-/*footer*/
+/* footer */
 footer {
   margin-top: 45px;
   padding-top: 5px;
@@ -11985,6 +11985,9 @@ footer {
 }
 footer a {
   color: #555;
+}
+footer a:hover {
+  color: #222;
 }
 footer img.brand-icon {
   width: 17px;
