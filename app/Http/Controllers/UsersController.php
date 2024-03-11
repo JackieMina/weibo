@@ -66,8 +66,16 @@ class UsersController extends Controller
 
         return redirect()->route('users.show',$user);
     }
+    
     public function index(){
         $users=User::paginate(6);
         return view('users.index',compact('users'));
+    }
+
+    public function destroy(User $user){
+        $this->authorize('destroy',$user);
+        $user->delete();
+        session()->flash('success','delete success! ');
+        return back();
     }
 }
