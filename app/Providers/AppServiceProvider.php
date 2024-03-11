@@ -29,5 +29,8 @@ class AppServiceProvider extends ServiceProvider
 
     // 或者在 Laravel 5.5 及更高版本，使用 Schema::defaultStringLength 方法的别名
     \Illuminate\Database\Schema\Builder::defaultStringLength(191);
+
+    \Illuminate\Pagination\Paginator::useBootstrap();
+
     }
 }
