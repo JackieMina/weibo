@@ -15,13 +15,16 @@
         <section class="user_info">
           @include('shared._user_info', ['user' => Auth::user()])
         </section>
+        <section class="stats mt-2">
+          @include('shared._stats', ['user' => Auth::user()])
+        </section>
       </aside>
     </div>
   @else
     <div class="bg-light p-3 p-sm-5 rounded">
       <h1>Hello Laravel</h1>
       <p class="lead">
-        你现在所看到的是 <a href="https://learnku.com/courses/laravel-essential-training">Laravel 入门教程</a> 的示例项目主页。
+        你现在所看到的是 <a href="https://learnku.com/courses/laravel-essential-training">Laravel</a> 的示例项目主页。
       </p>
       <p>
         一切，将从这里开始。
